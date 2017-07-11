@@ -37,3 +37,7 @@ chmod u+x cfg.sh
 make
 
 sudo make install
+
+sudo cp nginx.conf /usr/local/share/nginx/conf/nginx.conf
+
+sudo mkdir -p /usr/local/share/nginx/html/hls
