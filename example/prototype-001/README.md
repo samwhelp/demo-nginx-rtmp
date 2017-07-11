@@ -55,7 +55,7 @@ rtmp {
 
 * rtmp://localhost:2020/live/film
 
-請參考「[/usr/local/share/nginx/conf/nginx.conf](nginx.conf#L126)」的設定，和參考「[push-live.sh](push-live.sh)
+請參考「[/usr/local/share/nginx/conf/nginx.conf](nginx.conf#L126)」的設定，和參考「[push-live.sh](push-live.sh)」。
 
 ```
 rtmp {
