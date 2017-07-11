@@ -1,6 +1,6 @@
 # demo-nginx-rtmp
 
-[demo-nginx-rtmp](https://samwhelp.github.io/demo-nginx-rtmp/)
+[demo-nginx-rtmp](https://samwhelp.github.io/demo-nginx-rtmp/) ([GitHub](https://github.com/samwhelp/demo-nginx-rtmp))
 
 
 ## 原始討論
