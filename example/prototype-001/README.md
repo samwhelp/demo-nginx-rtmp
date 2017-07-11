@@ -4,6 +4,43 @@
 
 * /usr/local/share/nginx/
 
+執行
+
+``` sh
+$ tree /usr/local/share/nginx
+```
+
+顯示
+
+```
+/usr/local/share/nginx/
+├── conf
+│   ├── fastcgi.conf
+│   ├── fastcgi.conf.default
+│   ├── fastcgi_params
+│   ├── fastcgi_params.default
+│   ├── koi-utf
+│   ├── koi-win
+│   ├── mime.types
+│   ├── mime.types.default
+│   ├── nginx.conf
+│   ├── nginx.conf.default
+│   ├── scgi_params
+│   ├── scgi_params.default
+│   ├── uwsgi_params
+│   ├── uwsgi_params.default
+│   └── win-utf
+├── html
+│   ├── 50x.html
+│   ├── hls
+│   └── index.html
+├── logs
+└── sbin
+    └── nginx
+
+5 directories, 18 files
+```
+
 ## Http Document Root 路徑
 
 * /usr/local/share/nginx/html <--> http://localhost:8080/
