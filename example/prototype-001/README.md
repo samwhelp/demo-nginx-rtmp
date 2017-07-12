@@ -236,6 +236,12 @@ $ ffmpeg -re -i ~/Videos/test.mp4 -c copy -f flv rtmp://localhost:2020/live/film
 然後在開啟另一個「Terminal」，執行下面指令觀看
 
 ``` sh
+$ ffplay rtmp://localhost:2020/live/film
+```
+
+也可以執行下面指令觀看
+
+``` sh
 $ vlc rtmp://localhost:2020/live/film
 ```
 
@@ -244,6 +250,8 @@ $ vlc rtmp://localhost:2020/live/film
 ``` sh
 $ mpv rtmp://localhost:2020/live/film
 ```
+
+上面指令寫在「[view-live.sh](view-live.sh)」。
 
 
 ### 測試「rtmp://localhost:2020/hls/film」
@@ -276,6 +284,12 @@ film.m3u8
 然後在開啟另一個「Terminal」，執行下面指令觀看
 
 ``` sh
+$ ffplay rtmp://localhost:2020/hls/film
+```
+
+也可以執行下面指令觀看
+
+``` sh
 $ vlc rtmp://localhost:2020/hls/film
 ```
 
@@ -283,6 +297,14 @@ $ vlc rtmp://localhost:2020/hls/film
 
 ``` sh
 $ mpv rtmp://localhost:2020/hls/film
+```
+
+上面指令寫在「[view-hls.sh](view-hls.sh)」。
+
+也可以執行下面指令觀看
+
+``` sh
+$ ffplay http://localhost:8080/hls/film.m3u8
 ```
 
 也可以執行下面指令觀看
@@ -297,11 +319,15 @@ $ vlc http://localhost:8080/hls/film.m3u8
 $ mpv http://localhost:8080/hls/film.m3u8
 ```
 
+上面指令寫在「[view-hls-m3u8.sh](view-hls-m3u8.sh)」。
+
 或是透過網頁來觀看
 
 ``` sh
 $ firefox http://localhost:8080/live.html
 ```
+
+上面指令寫在「[view-hls-page.sh](view-hls-page.sh)」。
 
 請參考「[/usr/local/share/nginx/html/live.html](live.html)」的內容，
 
