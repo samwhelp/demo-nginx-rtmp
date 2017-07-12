@@ -322,3 +322,9 @@ $ firefox http://localhost:8080/live.html
 ## 參考文章
 
 * [ubuntu搭建推流服務器Nginx+rtmp](http://www.jianshu.com/p/f0bf83ca3ea3)
+
+## Docs
+
+* [Streaming with nginx-rtmp-module](http://nginx-rtmp.blogspot.com) ([GitHub](https://github.com/arut/nginx-rtmp-module))
+* [Getting started with nginx rtmp](https://github.com/arut/nginx-rtmp-module/wiki/Getting-started-with-nginx-rtmp)
+* [Video.js: The Player Framework](http://videojs.com/) ([GitHub](https://github.com/videojs))
