@@ -1,4 +1,13 @@
 
+## 安裝 Nginx
+
+執行
+
+``` sh
+$ ./install.sh
+```
+
+詳細步驟，請參考「[install.sh](install.sh)」。
 
 ## Nginx 安裝的路徑
 
@@ -107,6 +116,105 @@ rtmp {
 ...略...		
 	}
 }
+```
+
+## nginx 簡易操作
+
+### help
+
+執行
+
+``` sh
+$ /usr/local/share/nginx/sbin/nginx -h
+```
+
+顯示
+
+```
+nginx version: nginx/1.9.9
+Usage: nginx [-?hvVtTq] [-s signal] [-c filename] [-p prefix] [-g directives]
+
+Options:
+  -?,-h         : this help
+  -v            : show version and exit
+  -V            : show version and configure options then exit
+  -t            : test configuration and exit
+  -T            : test configuration, dump it and exit
+  -q            : suppress non-error messages during configuration testing
+  -s signal     : send signal to a master process: stop, quit, reopen, reload
+  -p prefix     : set prefix path (default: /usr/local/share/nginx/)
+  -c filename   : set configuration file (default: conf/nginx.conf)
+  -g directives : set global directives out of configuration file
+```
+
+
+### start
+
+執行
+
+``` sh
+$ sudo /usr/local/share/nginx/sbin/nginx
+```
+
+上面指令寫在「[server-start.sh](server-start.sh)」。
+
+
+### reload
+
+執行
+
+``` sh
+$ sudo /usr/local/share/nginx/sbin/nginx -s reload
+```
+
+上面指令寫在「[server-reload.sh](server-reload.sh)」。
+
+若原本已經啟動「nginx」，
+
+修改完「/usr/local/share/nginx/conf/nginx.conf」，則是可以執行這個指令。
+
+
+### stop
+
+執行
+
+``` sh
+$ sudo /usr/local/share/nginx/sbin/nginx -s stop
+```
+
+上面指令寫在「[server-stop.sh](server-stop.sh)」。
+
+
+一般的狀況下，採用上面的方式來「stop」。
+
+若遇到特殊的狀況，上面的方式無法運作的時候
+
+可以執行下面指令
+
+``` sh
+$ ps aux | grep nginx
+```
+
+顯示
+
+```
+root     27138  0.0  0.0  36900  4980 ?        Ss   09:33   0:00 nginx: master process /usr/local/share/nginx/sbin/nginx
+nobody   27139  0.0  0.1  37568  8312 ?        S    09:33   0:00 nginx: worker process
+nobody   27140  0.0  0.1  37096  7536 ?        S    09:33   0:00 nginx: cache manager process
+```
+
+透過「[kill](http://manpages.ubuntu.com/manpages/xenial/en/man1/kill.1.html)」這個指令來「stop」。
+
+``` sh
+sudo kill -9 27138
+sudo kill -9 27139
+sudo kill -9 27140
+```
+
+或是也可以透過「[killall](http://manpages.ubuntu.com/manpages/xenial/en/man1/killall.1.html)」這個指令來「stop」。
+
+``` sh
+$ sudo killall -9 nginx
 ```
 
 
