@@ -7,6 +7,6 @@ view-hls:
 	@view-hls.sh
 .PHONY: view-hls
 
-view-hls-m3u:
-	@view-hls-m3u.sh
-.PHONY: view-hls-m3u
+view-hls-m3u8:
+	@view-hls-m3u8.sh
+.PHONY: view-hls-m3u8
