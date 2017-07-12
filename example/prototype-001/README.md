@@ -217,7 +217,108 @@ sudo kill -9 27140
 $ sudo killall -9 nginx
 ```
 
+## 測試
+
+### 範例檔案
+
+以下假設有一個範例檔案「~/Videos/test.mp4」。
+
+當啟動「nginx」後
+
+### 測試「rtmp://localhost:2020/live/film」
+
+先開啟一個「Terinaml」，執行下面指令
+
+``` sh
+$ ffmpeg -re -i ~/Videos/test.mp4 -c copy -f flv rtmp://localhost:2020/live/film
+```
+
+然後在開啟另一個「Terminal」，執行下面指令觀看
+
+``` sh
+$ vlc rtmp://localhost:2020/live/film
+```
+
+也可以執行下面指令觀看
+
+``` sh
+$ mpv rtmp://localhost:2020/live/film
+```
+
+
+### 測試「rtmp://localhost:2020/hls/film」
+
+先開啟一個「Terinaml」，執行下面指令
+
+``` sh
+$ ffmpeg -re -i ~/Videos/test.mp4 -c copy -f flv rtmp://localhost:2020/hls/film
+```
+
+然後執行
+
+``` sh
+$ ls /usr/local/share/nginx/html/hls -1
+```
+
+會看到
+
+```
+film-0.ts
+film-1.ts
+film-2.ts
+film-3.ts
+film-4.ts
+film-5.ts
+...略...
+film.m3u8
+```
+
+然後在開啟另一個「Terminal」，執行下面指令觀看
+
+``` sh
+$ vlc rtmp://localhost:2020/hls/film
+```
+
+也可以執行下面指令觀看
+
+``` sh
+$ mpv rtmp://localhost:2020/hls/film
+```
+
+也可以執行下面指令觀看
+
+``` sh
+$ vlc http://localhost:8080/hls/film.m3u8
+```
+
+也可以執行下面指令觀看
+
+``` sh
+$ mpv http://localhost:8080/hls/film.m3u8
+```
+
+或是透過網頁來觀看
+
+``` sh
+$ firefox http://localhost:8080/live.html
+```
+
+請參考「[/usr/local/share/nginx/html/live.html](live.html)」的內容，
+
+網頁是播放「 http://localhost:8080/hls/film.m3u8 」。
+
+當過一段時間後，再觀看「/usr/local/share/nginx/html/hls」，裡面的「film*」的這些檔案，是會被清除的。
+
+可以查詢「[hls](https://www.google.com.tw/#q=hls)」，參考「[直播協議 hls 筆記](http://huli.logdown.com/posts/1142411-livestreamming-hls-note)」這篇的說明。
+
+我之前也有寫了一篇「[關於「m3u」和「mpv」和「smplayer」的操作使用](https://www.ubuntu-tw.org/modules/newbb/viewtopic.php?post_id=357582#forumpost357582)」。
+
 
 ## 原始討論
 
 * [#3 回覆: ubuntu搭建推流服務器Nginx+rtmp](https://www.ubuntu-tw.org/modules/newbb/viewtopic.php?post_id=357776#forumpost357776)
+
+
+## 參考文章
+
+* [ubuntu搭建推流服務器Nginx+rtmp](http://www.jianshu.com/p/f0bf83ca3ea3)
