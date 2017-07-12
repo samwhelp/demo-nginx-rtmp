@@ -77,7 +77,7 @@ http {
 			hls_path /usr/local/share/nginx/html/hls;
 ```
 
-## Rtmp URL
+## RTMP URL
 
 * rtmp://localhost:2020/hls/film
 
