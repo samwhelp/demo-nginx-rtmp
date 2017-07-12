@@ -41,7 +41,7 @@ $ tree /usr/local/share/nginx
 5 directories, 18 files
 ```
 
-## Http Document Root 路徑
+## HTTP Document Root 路徑
 
 * /usr/local/share/nginx/html <--> http://localhost:8080/
 
@@ -58,7 +58,7 @@ http {
 }
 ```
 
-## Rtmp HLS Root 路徑
+## RTMP HLS 路徑
 
 * /usr/local/share/nginx/html/hls <--> http://localhost:8080/hls
 

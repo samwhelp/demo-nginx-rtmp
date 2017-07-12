@@ -7,6 +7,7 @@
 
 mkdir build
 cd build
+## path: build
 
 git clone https://github.com/nginx/nginx.git
 git clone https://github.com/arut/nginx-rtmp-module.git
@@ -16,6 +17,7 @@ wget -c https://ftp.pcre.org/pub/pcre/pcre-8.39.tar.gz
 tar -xzvf pcre-8.39.tar.gz
 
 cd nginx
+## path: build/nginx
 
 git checkout release-1.9.9
 
@@ -38,6 +40,9 @@ make
 
 sudo make install
 
-sudo cp nginx.conf /usr/local/share/nginx/conf/nginx.conf
-
 sudo mkdir -p /usr/local/share/nginx/html/hls
+
+## path: build/nginx
+sudo cp ../../nginx.conf /usr/local/share/nginx/conf/nginx.conf
+
+sudo cp ../../live.html /usr/local/share/nginx/html/live.html
