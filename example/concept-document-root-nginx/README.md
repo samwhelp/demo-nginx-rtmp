@@ -131,7 +131,9 @@ html
 
 ## 複製 「html 檔案」到「nginx」的「Document Root」
 
-執行
+上面提到「Document Root」的路徑是設在「/usr/local/share/nginx/html/」這個資料夾。
+
+所以執行下面指令，複製「html檔」到「Document Root」底下。
 
 ``` sh
 sudo cp html/index.html /usr/local/share/nginx/html/index.html
