@@ -131,7 +131,9 @@ web
 * [web/blog/article-003.html](web/blog/article-003.html)
 
 以下範例，假設以「/home/project/concept-document-root-php/」這個路徑來當作「起始資料夾路徑」。
+
 所以上面的「web/index.html」就會是「/home/project/concept-document-root-php/web/index.html」，
+
 其他的以此類推。
 
 ## 啟動 「PHP Built-in web server」
