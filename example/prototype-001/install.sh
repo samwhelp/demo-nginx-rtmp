@@ -5,7 +5,7 @@
 ## https://www.ubuntu-tw.org/modules/newbb/viewtopic.php?post_id=357776#forumpost357776
 
 
-mkdir build
+mkdir -p build
 cd build
 ## path: build
 
