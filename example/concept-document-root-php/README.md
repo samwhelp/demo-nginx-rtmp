@@ -180,8 +180,9 @@ Document root is /home/user/project/concept-document-root-php/web
 Press Ctrl-C to quit.
 ```
 
-因為上面指令，並沒有指定「Document root」的路徑，所以預設會採用目前所在的資料夾路徑，
-也就是「web」這個資料夾的路徑。
+因為上面指令，並沒有指定「Document root」的路徑，
+
+所以預設會採用目前所在的資料夾路徑，也就是「web」這個資料夾的路徑。
 
 可以按下「Ctrl-C」就會離開，也就是關閉剛剛啟動的「PHP Built-in web server」。
 
