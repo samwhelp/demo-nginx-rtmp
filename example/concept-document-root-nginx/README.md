@@ -3,7 +3,7 @@
 
 ## 原始討論
 
-* 回覆: ubuntu搭建推流服務器Nginx+rtmp
+* [#19 回覆: ubuntu搭建推流服務器Nginx+rtmp](https://www.ubuntu-tw.org/modules/newbb/viewtopic.php?post_id=357894#forumpost357894)
 
 ## 範例目標
 
