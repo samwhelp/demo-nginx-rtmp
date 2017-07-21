@@ -136,6 +136,8 @@ web
 
 其他的以此類推。
 
+其中「/home/user」，請根據您目前使用的帳號而定。
+
 ## 啟動 「PHP Built-in web server」
 
 參考上面執行「`php -h`」可以找到下面兩個參數說明
