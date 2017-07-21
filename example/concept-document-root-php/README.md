@@ -130,9 +130,9 @@ web
 * [web/blog/article-002.html](web/blog/article-002.html)
 * [web/blog/article-003.html](web/blog/article-003.html)
 
-以下範例，假設以「/home/project/concept-document-root-php/」這個路徑來當作「起始資料夾路徑」。
+以下範例，假設以「/home/user/project/concept-document-root-php/」這個路徑來當作「起始資料夾路徑」。
 
-所以上面的「web/index.html」就會是「/home/project/concept-document-root-php/web/index.html」，
+所以上面的「web/index.html」就會是「/home/user/project/concept-document-root-php/web/index.html」，
 
 其他的以此類推。
 
@@ -158,7 +158,7 @@ $ cd web
 會顯示
 
 ```
-/home/project/concept-document-root-php/web
+/home/user/project/concept-document-root-php/web
 ```
 
 接下來執行下面指令，啟動「PHP Built-in web server」
@@ -174,7 +174,7 @@ $ php -S localhost:8080
 ```
 PHP 7.0.18-0ubuntu0.16.04.1 Development Server started at Fri Jul 21 14:52:11 2017
 Listening on http://localhost:8080
-Document root is /home/project/concept-document-root-php/web
+Document root is /home/user/project/concept-document-root-php/web
 Press Ctrl-C to quit.
 ```
 
@@ -200,7 +200,7 @@ $ pwd
 顯示目前所在路徑
 
 ```
-/home/project/concept-document-root-php
+/home/user/project/concept-document-root-php
 ```
 
 接下來執行下面指令，啟動「PHP Built-in web server」
@@ -216,7 +216,7 @@ $ php -S localhost:8080 -t web/
 ```
 PHP 7.0.18-0ubuntu0.16.04.1 Development Server started at Fri Jul 21 15:00:24 2017
 Listening on http://localhost:8080
-Document root is /home/project/concept-document-root-php/web
+Document root is /home/user/project/concept-document-root-php/web
 Press Ctrl-C to quit.
 ```
 
@@ -240,12 +240,12 @@ $ firefox http://localhost:8080/
 
 ## 「頁面網址」對照「檔案路徑」
 
-* http://localhost:8080 <-> /home/project/concept-document-root-php/web/index.html
-* http://localhost:8080/index.html <-> /home/project/concept-document-root-php/web/index.html
-* http://localhost:8080/about.html <-> /home/project/concept-document-root-php/web/about.html
-* http://localhost:8080/contact.html <-> /home/project/concept-document-root-php/web/contact.html
-* http://localhost:8080/blog/ <-> /home/project/concept-document-root-php/web/blog/index.html
-* http://localhost:8080/blog/index.html <-> /home/project/concept-document-root-php/web/blog/index.html
-* http://localhost:8080/blog/article-001.html <-> /home/project/concept-document-root-php/web/blog/article-001.html
-* http://localhost:8080/blog/article-002.html <-> /home/project/concept-document-root-php/web/blog/article-002.html
-* http://localhost:8080/blog/article-003.html <-> /home/project/concept-document-root-php/web/blog/article-003.html
+* http://localhost:8080 <-> /home/user/project/concept-document-root-php/web/index.html
+* http://localhost:8080/index.html <-> /home/user/project/concept-document-root-php/web/index.html
+* http://localhost:8080/about.html <-> /home/user/project/concept-document-root-php/web/about.html
+* http://localhost:8080/contact.html <-> /home/user/project/concept-document-root-php/web/contact.html
+* http://localhost:8080/blog/ <-> /home/user/project/concept-document-root-php/web/blog/index.html
+* http://localhost:8080/blog/index.html <-> /home/user/project/concept-document-root-php/web/blog/index.html
+* http://localhost:8080/blog/article-001.html <-> /home/user/project/concept-document-root-php/web/blog/article-001.html
+* http://localhost:8080/blog/article-002.html <-> /home/user/project/concept-document-root-php/web/blog/article-002.html
+* http://localhost:8080/blog/article-003.html <-> /home/user/project/concept-document-root-php/web/blog/article-003.html
