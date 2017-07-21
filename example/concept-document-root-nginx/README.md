@@ -8,6 +8,7 @@
 ## 範例目標
 
 延續另一個範例「[concept-document-root-php](../concept-document-root-php)」，
+
 這個範例「concept-document-root-nginx」，則是要瞭解「nginx」設定「Document Root」的概念。
 
 ## 操作環境
@@ -68,9 +69,9 @@ $ tree /usr/local/share/nginx
 
 ## 觀看「nginx.conf」設定的「Document Root」路徑
 
-以這個範例為例，「[nginx.conf](nginx.conf)」的路徑是在「/usr/local/share/nginx/conf/nginx.conf」。
+以這個範例為例，「[nginx.conf](conf/nginx.conf)」的路徑是在「/usr/local/share/nginx/conf/nginx.conf」。
 
-其中有一段在「第[43](nginx.conf#L43)行 ~ 第[46](nginx.conf#L46)行」
+其中有一段在「第[43](conf/nginx.conf#L43)行 ~ 第[46](conf/nginx.conf#L46)行」
 
 ```
 location / {
