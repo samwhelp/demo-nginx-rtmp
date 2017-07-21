@@ -236,7 +236,7 @@ server {
 	server_name  localhost;
 ```
 
-主要要修改的是「第36行」的「listen       80;」。
+主要是修改「第[36](conf/nginx.conf#L36)行」的「listen       80;」。
 
 所以可以改成
 
