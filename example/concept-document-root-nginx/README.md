@@ -94,18 +94,18 @@ location / {
 
 ## html 檔案
 
-這裡先準備了一些「html檔案」，放在「[web](web)」這個資料夾裡。
+這裡先準備了一些「html檔案」，放在「[html](html)」這個資料夾裡。
 
 執行
 
 ``` sh
-$ tree web
+$ tree html
 ```
 
 顯示
 
 ```
-web
+html
 ├── about.html
 ├── blog
 │   ├── article-001.html
@@ -120,13 +120,13 @@ web
 
 也就是下面幾個檔案
 
-* [web/index.html](web/index.html)
-* [web/about.html](web/about.html)
-* [web/contact.html](web/contact.html)
-* [web/blog/index.html](web/blog/index.html)
-* [web/blog/article-001.html](web/blog/article-001.html)
-* [web/blog/article-002.html](web/blog/article-002.html)
-* [web/blog/article-003.html](web/blog/article-003.html)
+* [html/index.html](html/index.html)
+* [html/about.html](html/about.html)
+* [html/contact.html](html/contact.html)
+* [html/blog/index.html](html/blog/index.html)
+* [html/blog/article-001.html](html/blog/article-001.html)
+* [html/blog/article-002.html](html/blog/article-002.html)
+* [html/blog/article-003.html](html/blog/article-003.html)
 
 
 ## 複製 「html 檔案」到「nginx」的「Document Root」
