@@ -185,19 +185,17 @@ $ sudo killall -9 nginx
 
 ## 如何測試
 
-### 範例檔案
-
-以下假設有一個範例檔案「~/Videos/test.mp4」。
+以下假設有一個範例檔案，路徑是「~/Videos/test.mp4」。
 
 當啟動「nginx」後，
-
-### 測試「rtmp://localhost:2020/live/film」
 
 先開啟一個「Terinaml」，執行下面指令
 
 ``` sh
 $ ffmpeg -re -i ~/Videos/test.mp4 -c copy -f flv rtmp://localhost:2020/live/film
 ```
+
+上面指令，寫在「[push.sh](push.sh)」。
 
 然後在開啟另一個「Terminal」，執行下面指令觀看
 
@@ -217,7 +215,7 @@ $ vlc rtmp://localhost:2020/live/film
 $ mpv rtmp://localhost:2020/live/film
 ```
 
-上面指令寫在「[view-live.sh](view-live.sh)」。
+上面指令寫在「[view.sh](view.sh)」。
 
 
 ## 原始討論
