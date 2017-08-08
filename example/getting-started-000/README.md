@@ -53,7 +53,7 @@ $ tree /usr/local/share/nginx
 
 ### rtmp://localhost:2020/live/film
 
-請參考「[/usr/local/share/nginx/conf/nginx.conf](nginx.conf#L17)」的設定，設定如下
+請參考「[/usr/local/share/nginx/conf/nginx.conf](nginx.conf#L21)」的設定，設定如下
 
 ```
 rtmp {
