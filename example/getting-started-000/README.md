@@ -83,7 +83,7 @@ rtmp {
 
 可以參考
 
-* Nginx Documentation / Beginner’s Guide / [Starting, Stopping, and Reloading Configuration](https://nginx.org/en/docs/beginners_guide.html#control)」
+* Nginx Documentation / Beginner’s Guide / [Starting, Stopping, and Reloading Configuration](https://nginx.org/en/docs/beginners_guide.html#control)
 * Nginx Documentation / [Controlling nginx](https://nginx.org/en/docs/control.html)
 
 ### help
